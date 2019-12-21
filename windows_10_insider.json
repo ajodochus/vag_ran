@@ -40,7 +40,7 @@
     },
     {
       "boot_command": "",
-      "boot_wait": "6m",
+      "boot_wait": "15m",
       "communicator": "winrm",
       "cpus": 2,
       "disk_size": "{{user `disk_size`}}",
@@ -65,14 +65,14 @@
       "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
       "type": "virtualbox-iso",
       "winrm_password": "vagrant",
-      "winrm_timeout": "2h",
+      "winrm_timeout": "6h",
       "winrm_username": "vagrant"
     },
     {
       "boot_command": [
         "<enter>"
       ],
-      "boot_wait": "1s",
+      "boot_wait": "15m",
       "communicator": "winrm",
       "cpus": 2,
       "disk_size": "{{user `disk_size`}}",
